@@ -4,9 +4,14 @@ import ContactListItem from 'components/ContactListItem/ContactListItem';
 import { List } from './ContactList.styled';
 import PropTypes from 'prop-types';
 
-const ContactList = props => {
-  const { contacts, filterValue, onDeleteContact } = props;
+// const ContactList = props => {
+//   const { contacts, filterValue, onDeleteContact } = props;
 
+//   const filterContact = contacts.filter(contact =>
+//     contact.name.toLowerCase().includes(filterValue.toLowerCase())
+//   );
+
+const ContactList = ({ contacts, filterValue, onDeleteContact }) => {
   const filterContact = contacts.filter(contact =>
     contact.name.toLowerCase().includes(filterValue.toLowerCase())
   );

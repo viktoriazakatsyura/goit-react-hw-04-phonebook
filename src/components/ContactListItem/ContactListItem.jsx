@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 
 import { BtnDelete, ListItame, Text } from './ContactListItem.styled';
 
-// kompomneta
 
 const ContactListItem = props => {
   const { id, name, number, onDeleteContact } = props;
